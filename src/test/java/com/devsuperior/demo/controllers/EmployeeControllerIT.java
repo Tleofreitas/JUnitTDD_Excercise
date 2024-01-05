@@ -41,7 +41,7 @@ public class EmployeeControllerIT {
 		result.andExpect(jsonPath("$.content[1].name").value("Ana"));
 		result.andExpect(jsonPath("$.content[2].name").value("Andressa"));
 	}
-	/*
+	
 	@Test
 	public void insertShouldInsertResource() throws Exception {
 
@@ -59,5 +59,5 @@ public class EmployeeControllerIT {
 		result.andExpect(jsonPath("$.name").value("Joaquim"));
 		result.andExpect(jsonPath("$.email").value("joaquim@gmail.com"));
 		result.andExpect(jsonPath("$.departmentId").value(1L));
-	}	*/
+	}
 }
